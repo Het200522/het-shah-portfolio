@@ -5,7 +5,7 @@ import { ArrowDown, Download, Mail } from 'lucide-react';
 import { PROFILE } from '../constants/data';
 import { scrollToId } from '../utils/helpers';
 import ParticleField from './ParticleField';
-import profileImg from '../assets/Het_Shah_Profile.png';
+import profileImg from '../assets/Het Photo.png';
 
 export default function Hero() {
   const typedEl = useRef(null);
