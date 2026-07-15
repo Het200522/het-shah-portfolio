@@ -5,6 +5,7 @@ import { ArrowDown, Download, Mail } from 'lucide-react';
 import { PROFILE } from '../constants/data';
 import { scrollToId } from '../utils/helpers';
 import ParticleField from './ParticleField';
+import profileImg from '../assets/Het_Shah_Profile.png';
 
 export default function Hero() {
   const typedEl = useRef(null);
@@ -98,7 +99,7 @@ export default function Hero() {
             }}
           />
           <div className="glass relative flex h-[92%] w-[92%] items-center justify-center overflow-hidden rounded-full">
-            <span className="font-display text-6xl font-semibold text-gradient">HS</span>
+            <img src={profileImg} alt="Het Shah" className="h-full w-full object-cover" />
           </div>
           {/* Scanning ring — signature OCR/scan motif */}
           <div
