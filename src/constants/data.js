@@ -5,7 +5,7 @@ export const PROFILE = {
   name: 'Het Shah',
   roles: [
     'AI & Machine Learning Engineer',
-    'Full Stack Developer',
+    'Machine Learning Enthusiast',
     'Problem Solver',
     'Open Source Enthusiast',
   ],
