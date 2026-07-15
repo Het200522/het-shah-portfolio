@@ -72,7 +72,7 @@ export const PROJECTS = [
     ],
     tech: ['Python', 'Machine Learning', 'OCR', 'OpenCV', 'Scikit-learn', 'Streamlit'],
     status: 'Capstone',
-    links: { github: '#', demo: '#' },
+    links: { github: 'https://github.com/Het200522/capstone-main', demo: 'https://jumpshare.com/folder/B8vJXWSeKDKFaX7DwUZQ' },
   },
   {
     id: 'incident-response-agent',
@@ -88,7 +88,7 @@ export const PROJECTS = [
     ],
     tech: ['Python', 'AI Agents', 'NLP', 'Vector Database', 'RAG'],
     status: 'Finalist',
-    links: { github: '#' },
+    links: { github: 'https://github.com/Het200522/rocketride-server' },
   },
   {
     id: 'restaurant-management',
@@ -104,7 +104,7 @@ export const PROJECTS = [
     ],
     tech: ['C', 'Data Structures'],
     status: 'Complete',
-    links: { github: '#' },
+    links: { github: 'https://github.com/Het200522/Restaurant_Management_Project' },
   },
 ];
 
