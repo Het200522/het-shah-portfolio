@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-bg: #0a0d14;
+  --color-bg-soft: #0e1220;
+  --color-surface: rgba(255, 255, 255, 0.04);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-violet: #8b5cf6;
+  --color-violet-bright: #a78bfa;
+  --color-cyan: #22d3ee;
+  --color-text: #e7e9f0;
+  --color-muted: #8a91a8;
+  --color-signal: #34e0a1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.light {
+  --color-bg: #f7f7fb;
+  --color-bg-soft: #eef0f8;
+  --color-surface: rgba(20, 20, 40, 0.03);
+  --color-border: rgba(20, 20, 40, 0.09);
+  --color-text: #171a2b;
+  --color-muted: #5b6178;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-violet);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-violet), var(--color-cyan));
+  border-radius: 8px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--color-violet-bright), var(--color-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.grid-noise {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Signature scan-beam divider — echoes the OCR/scan theme from MediScan */
+.scan-divider {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background: var(--color-border);
+  overflow: visible;
+}
+.scan-divider::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 140px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-cyan), var(--color-violet-bright), transparent);
+  filter: blur(0.5px);
+  box-shadow: 0 0 16px 2px rgba(34, 211, 238, 0.55);
+  animation: scan-move 6s ease-in-out infinite;
+}
+@keyframes scan-move {
+  0% { left: -10%; }
+  50% { left: 90%; }
+  100% { left: -10%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
