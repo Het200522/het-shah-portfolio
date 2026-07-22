@@ -33,15 +33,15 @@ export const ABOUT = {
 export const SKILLS = [
   {
     category: 'Programming',
-    items: ['Python', 'C++', 'SQL', 'Java', 'JavaScript'],
+    items: ['Python', 'C++', 'SQL', ],
   },
   {
     category: 'Frontend',
-    items: ['HTML', 'CSS', 'React', 'Tailwind CSS'],
+    items: ['HTML', 'CSS',  'Tailwind CSS'],
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express.js'],
+    items: ['Node.js'],
   },
   {
     category: 'AI / ML',
@@ -53,7 +53,7 @@ export const SKILLS = [
   },
   {
     category: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Streamlit', 'Figma', 'Canva'],
+    items: ['Git', 'GitHub', 'VS Code', 'Streamlit',  'Canva'],
   },
 ];
 
