@@ -137,21 +137,21 @@ export const EDUCATION = [
     degree: 'B.Tech, Computer Science Engineering',
     detail: 'Specialization: Artificial Intelligence & Machine Learning',
     period: '2023 — 2027',
-    meta: 'CGPA: 7.29',
+    meta: 'CGPA: 7.45',
   },
   {
     school: 'Nirman High School',
     degree: 'Higher Secondary Certificate (HSC)',
     detail: null,
     period: '2023',
-    meta: null,
+    meta: 'Percentage: 51',
   },
   {
     school: 'Nirman High School',
     degree: 'Secondary School Certificate (SSC)',
     detail: null,
     period: '2021',
-    meta: null,
+    meta: 'Percentage: 83',
   },
 ];
 
