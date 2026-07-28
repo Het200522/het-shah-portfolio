@@ -1,6 +1,6 @@
 // Central content store — sourced from Het Shah's resume.
 // Keeping copy here (not scattered in components) makes it easy to update.
-
+import wanderlyImg from '../assets/projects/wanderly.png';
 export const PROFILE = {
   name: 'Het Shah',
   roles: [
@@ -106,6 +106,27 @@ export const PROJECTS = [
     status: 'Complete',
     links: { github: 'https://github.com/Het200522/Restaurant_Management_Project' },
   },
+  {
+  id: 'wanderly',
+  title: 'Wanderly',
+  tag: 'Personal Project',
+  subtitle: 'AI-Powered Travel Planner',
+  description:
+    'An AI travel planning platform that turns a destination, style, and budget into a complete day-by-day itinerary — hotels, restaurants, hidden gems, packing list, and visa info — all mapped and shareable in under 60 seconds.',
+  image: wanderlyImg, 
+  highlights: [
+    'AI-generated day-by-day itineraries powered by Gemini, tuned to travel style, pace, and budget',
+    'Interactive Google Maps integration showing every hotel, restaurant, and attraction on the route',
+    'Live budget calculator, currency conversion, and expense tracking built into the trip plan',
+    'Weather-aware recommendations, plus visa requirements, safety info, and emergency contacts',
+  ],
+  tech: ['React', 'Gemini AI', 'Google Maps API', 'Node.js'],
+  status: 'Complete',
+  links: {
+    github: 'https://github.com/Het200522/wanderly',
+    demo: 'https://globegeist-planner-final.vercel.app/',
+  },
+},
 ];
 
 export const ACHIEVEMENTS = [
