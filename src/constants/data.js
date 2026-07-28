@@ -123,7 +123,7 @@ export const PROJECTS = [
   tech: ['React', 'Gemini AI', 'Google Maps API', 'Node.js'],
   status: 'Complete',
   links: {
-    github: 'https://github.com/Het200522/wanderly',
+    github: 'https://github.com/Het200522/Wanderly',
     demo: 'https://globegeist-planner-final.vercel.app/',
   },
 },
