@@ -52,6 +52,13 @@ export default function Projects() {
                 transition={{ duration: 0.4, delay: i * 0.05 }}
                 className="glass flex flex-col rounded-2xl p-6"
               >
+                 {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="-mx-6 -mt-6 mb-4 h-48 w-[calc(100%+3rem)] rounded-t-2xl object-cover"
+                  />
+                )}
                 <div className="flex items-center justify-between">
                   <span
                     className="rounded-full border px-2.5 py-0.5 font-mono text-[10px] tracking-wide"
