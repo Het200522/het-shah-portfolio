@@ -14,7 +14,7 @@ export const PROFILE = {
   email: 'shet6640@gmail.com',
   github: 'https://github.com/Het200522',
   githubUsername: 'Het200522',
-  linkedin: 'https://linkedin.com/in/het-shah',
+  linkedin: 'www.linkedin.com/in/het-shah-b17a39373',
   resumeFile: '/Het_Shah_Resume.pdf',
   summary:
     "Final-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning. I build AI-driven products end to end — from model to interface — and I'm drawn to problems where a system has to make a judgment call under uncertainty. Currently looking for opportunities in AI/ML and full-stack software development.",
