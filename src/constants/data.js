@@ -176,18 +176,39 @@ export const EDUCATION = [
   },
 ];
 
+// Each certificate carries an image (served from /public/certificates/,
+// same convention as PROFILE.resumeFile) plus issuer/date so the
+// Certificates section can render real cards with a click-to-view lightbox.
 export const CERTIFICATIONS = [
   {
-    title: 'Green Skills & Artificial Intelligence',
-    issuer: 'Edunet Foundation',
+    title: 'Technology Job Simulation',
+    issuer: 'Deloitte (via Forage)',
+    date: 'Jul 2026',
+    image: '/certificates/cert-deloitte.png',
   },
   {
-    title: 'AI Tools & ChatGPT',
+    title: 'AI Tools & ChatGPT Workshop',
     issuer: 'be10x',
+    date: 'May 2026',
+    image: '/certificates/cert-be10x.png',
+  },
+  {
+    title: 'Agile Scrum Master',
+    issuer: 'Simplilearn SkillUp',
+    date: 'Aug 2026',
+    image: '/certificates/cert-simplilearn-scrum.jpg',
   },
   {
     title: 'Hour of AI',
-    issuer: 'Certification Program',
+    issuer: 'Code.org / CSforAll',
+    date: null,
+    image: '/certificates/cert-codeorg-hourofai.jpg',
+  },
+  {
+    title: 'Green Skills & Artificial Intelligence',
+    issuer: 'Edunet Foundation × AICTE × Shell',
+    date: 'Jul 2025',
+    image: '/certificates/cert-edunet-greenskills.jpg',
   },
 ];
 
@@ -195,6 +216,7 @@ export const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Certificates', href: '#certificates' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Education', href: '#education' },
   { label: 'GitHub', href: '#github' },
